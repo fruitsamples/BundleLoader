@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,7 +33,7 @@
 		53B305390C0F2C1D00B031ED /* MyBundle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyBundle.h; path = ../MyBundle.h; sourceTree = SOURCE_ROOT; };
 		53B3053A0C0F2C1D00B031ED /* MyBundle.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyBundle.m; path = ../MyBundle.m; sourceTree = SOURCE_ROOT; };
 		8D5B49B6048680CD000E48DA /* Doodad.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Doodad.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -86,11 +86,11 @@
 			children = (
 				53B305390C0F2C1D00B031ED /* MyBundle.h */,
 				53B3053A0C0F2C1D00B031ED /* MyBundle.m */,
-				536C1BB00C1DEFD0004694D0 /* DoodadWindowController.m */,
 				536C1BB10C1DEFD0004694D0 /* DoodadWindowController.h */,
+				536C1BB00C1DEFD0004694D0 /* DoodadWindowController.m */,
 				536C1BB20C1DEFD0004694D0 /* Doodad.h */,
-				536C1BB30C1DEFD0004694D0 /* Doodad_Prefix.pch */,
 				536C1BB40C1DEFD0004694D0 /* Doodad.m */,
+				536C1BB30C1DEFD0004694D0 /* Doodad_Prefix.pch */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -148,8 +148,16 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Doodad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 089C166AFE841209C02AAC07 /* Gizmo */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -221,7 +229,6 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -229,7 +236,6 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "";
 				PRODUCT_NAME = Doodad;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = YES;
 			};
@@ -238,10 +244,6 @@
 		1DEB913C08733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -251,7 +253,6 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "";
 				PRODUCT_NAME = Doodad;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -259,20 +260,22 @@
 		1DEB913F08733D840010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		1DEB914008733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

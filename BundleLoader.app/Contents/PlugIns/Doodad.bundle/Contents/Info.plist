@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BuildMachineOSBuild</key>
+	<string>11A504</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -9,7 +11,7 @@
 	<key>CFBundleIconFile</key>
 	<string>Doodad.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.AppKit.bundleexample.doodadbundle</string>
+	<string>com.yourcompany.bundleexample.doodadbundle</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -19,7 +21,21 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
+	<key>DTCompiler</key>
+	<string></string>
+	<key>DTPlatformBuild</key>
+	<string>4D5031b</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>11A476a</string>
+	<key>DTSDKName</key>
+	<string>macosx10.7</string>
+	<key>DTXcode</key>
+	<string>0420</string>
+	<key>DTXcodeBuild</key>
+	<string>4D5031b</string>
 	<key>NSPrincipalClass</key>
 	<string>Doodad</string>
 </dict>
